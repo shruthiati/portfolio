@@ -760,10 +760,12 @@ h2 {
     }
 
     #lead-content {
+        display: flex !important;
+        flex-direction: column  !important;
         position: relative;
         transform: none;
-        left: auto;
-        top: auto
+        left: 0px  !important;
+        top: auto;
     }
 
     #lead-content h1 {
