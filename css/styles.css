@@ -532,22 +532,19 @@ h2 {
 .project {
     position: relative;
     max-width: 900px;
+    height: auto;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px
 }
 
-.project-image {
-    float: left
-}
 
 .project-info {
     position: absolute;
-    left: 30%;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 300px;
+    margin-left: 30px;
     padding: 15px
 }
 
@@ -834,16 +831,25 @@ h2 {
         float: none
     }
 
-    .project-image {
-        display: none
+    
+    .project{
+        height: auto !important;
+        display: grid;
+        align-items: center;
+    }
+    .shadow-large{
+        height: auto;
     }
 
     .project-info {
         position: relative;
         margin: 0;
+        float: none;
         padding: 30px 15px;
         top: auto;
-        transform: none
+        transform: none;
+        grid-row: 1;
+
     }
 
     footer {
@@ -871,16 +877,7 @@ h2 {
 }
 
 .project {
-    height: 450px;
-}
-
-.project-image img {
-    height: 450px !important;
-    width: 550px;
-}
-
-.project-info {
-    width: 300px;
+    height: 200px;
 }
 
 #lead-content {
@@ -911,3 +908,5 @@ li {
     font-size: 0.9em;
     margin: 0;
 }
+
+
